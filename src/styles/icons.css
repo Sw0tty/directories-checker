@@ -1,0 +1,40 @@
+.icon-circle-question img {
+    -webkit-mask-image: url('/src/icons/QuestionCircle.svg');
+	mask-image: url('/src/icons/QuestionCircle.svg');
+    background-color: var(--gray);
+}
+
+.icon-explore img {
+    -webkit-mask-image: url('/src/icons/ExploreFolder.svg');
+	mask-image: url('/src/icons/ExploreFolder.svg');
+}
+
+.icon-folder img {
+    -webkit-mask-image: url('/src/icons/Folder.svg');
+	mask-image: url('/src/icons/Folder.svg');
+    background-color: #ffc547;
+}
+
+.icon-blank-file img {
+    -webkit-mask-image: url('/src/icons/FileBlank.svg');
+	mask-image: url('/src/icons/FileBlank.svg');
+    background-color: #47a6ff;
+}
+
+.icon-image-file img {
+    -webkit-mask-image: url('/src/icons/ImageFile.svg');
+	mask-image: url('/src/icons/ImageFile.svg');
+    background-color: #18b10a;
+}
+
+.icon-video-file img {
+    -webkit-mask-image: url('/src/icons/VideoFile.svg');
+	mask-image: url('/src/icons/VideoFile.svg');
+    background-color: #47cbff;
+}
+
+.icon-music-file img {
+    -webkit-mask-image: url('/src/icons/MusicFile.svg');
+	mask-image: url('/src/icons/MusicFile.svg');
+    background-color: #ff4766;
+}

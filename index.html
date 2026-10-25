@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<!-- Security on -->
+		<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" /> -->
+		<!-- Security off for using html style -->
+		<meta
+		http-equiv="X-Content-Security-Policy"
+		content="default-src 'self'; script-src 'self'"
+		/>
+		<link rel="stylesheet" href="./src/styles/index.css" />
+		<link rel="stylesheet" href="./src/styles/elements.css" />
+		<link rel="stylesheet" href="./src/styles/icons.css" />
+		<title>Directories checker</title>
+	</head>
+	<body>
+		<div id="modals-container"></div>
+		<div id="context-menu" class="context-menu display-none"></div>
+		<div id="dragged-item" class="dragged-item-container display-none"></div>
+
+		<div class="container-base settings-container element-shadow">
+			<div class="checkbox-component-container">
+				<span>Не отражать совпадения</span>
+				<div id="exclude-equals-checkbox">
+					<input class="checkbox-input" type="checkbox" />
+					<div class="checkbox-checked-status-container">
+						<div class="checkbox-checked-status"></div>
+					</div>
+				</div>
+			</div>
+			<div class="checkbox-component-container">
+				<span>Построить недостающие элементы</span>
+				<div id="build-mime-elements-checkbox">
+					<input class="checkbox-input" type="checkbox" />
+					<div class="checkbox-checked-status-container">
+						<div class="checkbox-checked-status"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-base trees-container element-shadow">
+			<div class="tree-container">
+				<div class="tree-header-container">
+					<div class="tree-input-container">
+						<input id="first-tree-input" class="input-base input-full-length" />
+						<button id="first-tree-input-btn" class="button-base select-root-tree-btn">Select folder</button>
+					</div>
+				</div>
+				<div class="search-container">
+					<div class="search-element-container">
+						<input id="search-first-tree-input" class="input-base" placeholder="Поиск" />
+						<button id="first-search-by-directories-checkbox-state" class="check-block">Поиск директорий</button>
+					</div>
+				</div>
+				<div id="firstTree"></div>
+				<div id="firstTree-footer" class="tree-footer-container display-none"></div>
+			</div>
+			<div id="tree-delimiter" class="tree-delimiter"></div>
+			<div class="tree-container">
+				<div class="tree-header-container">
+					<div class="tree-input-container">
+						<input id="second-tree-input" class="input-base input-full-length" />
+						<button id="second-tree-input-btn" class="button-base select-root-tree-btn">Select folder</button>
+					</div>
+				</div>
+				<div class="search-container">
+					<div class="search-element-container">
+						<input id="search-second-tree-input" class="input-base" placeholder="Поиск" />
+						<button id="second-search-by-directories-checkbox-state" class="check-block">Поиск директорий</button>
+					</div>
+				</div>
+				<div id="secondTree"></div>
+				<div id="secondTree-footer" class="tree-footer-container display-none"></div>
+			</div>
+		</div>
+		<div class="check-btn-container">
+			<button id="check-directories-btn" class="button-base check-directories-btn">Check directories</button>
+			<div id="info-btn" class="icon-element-base icon-background-transition icon-circle-question icon-circle-question-info"><img /></div>
+		</div>
+	<script type="module" src="/src/renderer.tsx"></script>
+	</body>
+</html>
