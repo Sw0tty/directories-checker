@@ -5,6 +5,10 @@
   "description": "A utility that allows you to compare two directories and identify their differences",
   "main": ".vite/build/main.js",
   "private": true,
+  "allowScripts": {
+    "electron": true,
+    "@electron/node-gyp": true
+  },
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -30,12 +34,11 @@
     "@types/react-dom": "^19.2.4",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
-    "electron": "^40.0.6",
+    "electron": "^40.10.2",
     "eslint": "^8.57.1",
     "eslint-plugin-import": "^2.32.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "sass": "^1.99.0",
     "typescript": "^7.0.2",
     "vite": "^5.4.21"
   },

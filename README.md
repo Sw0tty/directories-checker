@@ -18,11 +18,11 @@ A utility that allows you to compare two directories and identify their differen
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/Sw0tty/directories-checker.git
    ```
 2. Install NPM packages
    ```sh
-   npm install
+   npm install --allow-git=all
    ```
 3. Run project
    ```sh
